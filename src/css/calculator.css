@@ -1,0 +1,96 @@
+.base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* display */
+
+.input {
+    width: 99%;
+    height: 60px;
+    background-color: #1d0c12;
+    color: #ff5369;
+    border: solid 0px black;
+}
+
+
+/* keyboard */
+
+.case {
+    background: #bcaf83;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-radius: 35px 35px 15px 15px;
+}
+
+.keyboard {
+    background-color: #161717;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    /* background-color: #172417; */
+    background-color: #161717;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: #bcaf83;
+    display: flex;
+    justify-content: center;
+}
+
+.header p {
+    margin: 8px;
+}
+
+.logo {
+    padding-left: 30px;
+}
+
+.header-name {
+    padding-left: 75px;
+}
+
+
+/* btns */
+
+.btn {
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    border-radius: 5px;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-size: 1.5rem;
+}
+
+.btn-aux {
+    background-color: #c3b383;
+}
+
+.btn-0 {
+    padding-left: 35px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.btn-equal {
+    background-color: #ff7111;
+    padding-left: 35px;
+    padding-right: 50px;
+    text-align: center;
+    margin-left: 9px;
+}
+
+.btn-dot {
+    margin-left: 10px;
+}
