@@ -1,11 +1,12 @@
 // import { value, setValue } from "../App.jsx"
 
 export function btnNumber(e, value, setValue) {
-    setValue(value + e.target.value)
-}
-
-export function btnPlus(e, value, setValue) {
-    e.target.value = "*";
+    if (value === undefined) {
+        setValue(value = "")
+    }
+    if (e.target.value === undefined) {
+        setValue(e.target.value = "")
+    }
     setValue(value + e.target.value)
 }
 
@@ -14,14 +15,34 @@ export function btnC(e, setValue) {
     setValue(setValue = "")
 }
 
-export function equal(e, value, setValue) {
+export function btnCE(e, value, setValue) {
     e.preventDefault()
-        // if (e.target.value === undefined) {
-        //     return console.log("vacio");
-        // }
-        // if (setValue === undefined) {
-        //     return console.log("vacio");
-        // }
+    setValue(value.slice(0, -1))
+}
 
-    setValue(eval(value))
+export function equal(e, value, setValue) {
+    if (value === "*" || value === "/" || value === "%" || value === "+" || value === "-") {
+        value = "";
+        setValue(value = "")
+        return
+    }
+    try {
+        setValue(eval(value).toString())
+    } catch (error) {
+
+        setValue(value = "");
+    }
+
+}
+
+
+export function btnOperation(e, value, setValue) {
+
+    if (e.target.value === "X") {
+        e.target.value = "*"
+    }
+    if (e.target.value === "÷") {
+        e.target.value = "/"
+    }
+    setValue(value + e.target.value)
 }

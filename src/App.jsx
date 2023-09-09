@@ -2,7 +2,13 @@ import { useState } from "react";
 import "./App.css";
 import "./css/calculator.css";
 import "./css/background.css";
-import { btnNumber, btnC, btnPlus, equal } from "./helpers/calculator";
+import {
+  btnNumber,
+  btnC,
+  btnCE,
+  btnOperation,
+  equal,
+} from "./helpers/calculator";
 
 function App() {
   let [value, setValue] = useState("");
@@ -28,19 +34,19 @@ function App() {
                 className="btn btn-aux"
                 type="button"
                 value="CE"
-                onClick={(e) => btnNumber(e, value, setValue)}
+                onClick={(e) => btnCE(e, value, setValue)}
               />
               <input
                 className="btn btn-aux"
                 type="button"
                 value="%"
-                onClick={(e) => btnNumber(e, value, setValue)}
+                onClick={(e) => btnOperation(e, value, setValue)}
               />
               <input
                 className="btn btn-aux"
                 type="button"
                 value="÷"
-                onClick={(e) => btnNumber(e, value, setValue)}
+                onClick={(e) => btnOperation(e, value, setValue)}
               />
             </div>
             <div className="">
@@ -66,7 +72,7 @@ function App() {
                 className="btn btn-aux"
                 type="button"
                 value="X"
-                onClick={(e) => btnPlus(e, value, setValue)}
+                onClick={(e) => btnOperation(e, value, setValue)}
               />
             </div>
             <div>
@@ -92,7 +98,7 @@ function App() {
                 className="btn btn-aux"
                 type="button"
                 value="-"
-                onClick={(e) => btnNumber(e, value, setValue)}
+                onClick={(e) => btnOperation(e, value, setValue)}
               />
             </div>
             <div>
@@ -118,7 +124,7 @@ function App() {
                 className="btn btn-aux"
                 type="button"
                 defaultValue="+"
-                onClick={(e) => btnNumber(e, value, setValue)}
+                onClick={(e) => btnOperation(e, value, setValue)}
               />
             </div>
             <div>
