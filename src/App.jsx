@@ -2,13 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import "./css/calculator.css";
 import "./css/background.css";
-import {
-  btnNumber,
-  btnC,
-  btnCE,
-  btnOperation,
-  equal,
-} from "./helpers/calculator";
+import { btnNumber } from "./helpers/numbers";
+import { btnC, btnCE } from "./helpers/clearEntry";
+import { btnOperation, equal } from "./helpers/operations";
 
 function App() {
   let [value, setValue] = useState("");
