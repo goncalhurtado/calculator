@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .base {
     display: flex;
     justify-content: center;
@@ -18,6 +23,8 @@
     height: 60px;
     background-color: #1d0c12;
     color: #ff5369;
+    font-size: 1.5rem;
+    text-align: end;
     border: solid 0px black;
 }
 

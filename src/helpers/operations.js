@@ -15,7 +15,7 @@ export function btnOperation(e, value, setValue) {
 }
 
 export function equal(e, value, setValue) {
-    if (value === "*" || value === "/" || value === "%" || value === "+" || value === "-" || value === "Infinity" || value === "Nan") {
+    if (value === "*" || value === "/" || value === "%" || value === "+" || value === "-" || value === "Infinity" || value === "NaN") {
         value = "";
         setValue(value = "")
         return

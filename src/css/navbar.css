@@ -1,0 +1,23 @@
+.navbar {
+    width: 100%;
+    background-color: #c3b383;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navLink {
+    background-color: #ff7111;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    margin: 4px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
