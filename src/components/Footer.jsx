@@ -7,7 +7,11 @@ const Footer = () => {
       <div>
         <h3>
           Develop by{" "}
-          <a href="" style={{ color: "#161717" }}>
+          <a
+            href="https://www.linkedin.com/in/gonzalo-javier-hurtado-1bba76284/"
+            target="_blank"
+            style={{ color: "#161717" }}
+          >
             Goncal Hurtado
           </a>
         </h3>
