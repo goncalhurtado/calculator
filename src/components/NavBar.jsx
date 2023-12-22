@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar" style={{ marginBottom: "10px" }}>
       <Link to={"/"} className="btn navLink">
         Calculator
       </Link>

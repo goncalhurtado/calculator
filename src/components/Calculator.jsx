@@ -19,7 +19,7 @@ const Calculator = () => {
             <p className="logo">calculator</p>
             <p className="header-name">Datamath II</p>
           </div>
-          <div className="container keyboard">
+          <div className="keyboard">
             <div className="">
               <input
                 className="btn btn-aux"
